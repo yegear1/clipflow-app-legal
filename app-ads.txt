@@ -1,0 +1,2 @@
+# Replace pub-0000000000000000 with your real 16-digit AdMob Publisher ID from AdMob -> Account -> Settings
+google.com, pub-3688259543815898, DIRECT, f08c47fec0942fa0

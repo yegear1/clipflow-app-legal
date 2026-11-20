@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClipFlow — Privacy Policy &amp; Política de Privacidade</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg: #0b0f12;
+      --card: #12191e;
+      --text: #e6eef2;
+      --muted: #93a6b1;
+      --accent: #10b981;
+      --border: #1f2b33;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #059669;
+        --border: #e2e8f0;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 2rem 1rem 4rem;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      padding: 0.15rem 0.65rem;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      margin: 0.25rem 0;
+      font-size: 1.85rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: var(--accent);
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    p, li {
+      color: var(--text);
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .lang-nav {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .lang-nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .lang-nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">ClipFlow for Android</span>
+      <h1>Privacy Policy / Política de Privacidade</h1>
+      <p class="muted">Last updated / Última atualização: November 16, 2026</p>
+      <div class="lang-nav">
+        <a href="#en">English</a>
+        <span>·</span>
+        <a href="#pt-br">Português (Brasil)</a>
+      </div>
+    </header>
+
+    <section id="en">
+      <h2>1. Overview (English)</h2>
+      <p>
+        <strong>ClipFlow</strong> is an on-device social video downloader and media manager for supported public social platforms (such as TikTok, Instagram, and X/Twitter). ClipFlow does not require user registration, accounts, or cloud storage.
+      </p>
+
+      <h2>2. On-Device Data Processing &amp; Storage</h2>
+      <ul>
+        <li><strong>Media Transfers &amp; URLs:</strong> Links pasted or shared into ClipFlow are processed directly on your Android device to inspect available media formats and save the selected file to your device's local media storage (<code>MediaStore</code>). ClipFlow does not operate a first-party backend server to collect your links or downloaded files.</li>
+        <li><strong>Local Download History:</strong> ClipFlow stores your download queue and history locally on your device using an internal SQLite/Room database so you can view, open, share, or retry saved items. You can clear or remove items directly on your device or by clearing the app's storage in Android Settings.</li>
+        <li><strong>Transient Network Sessions:</strong> Temporary HTTP request metadata required to complete an active media transfer is stored in private non-backed-up application storage and automatically expires within 6 hours.</li>
+      </ul>
+
+      <h2>3. Advertising, Analytics &amp; Google AdMob SDK</h2>
+      <p>
+        The Google Play distribution of ClipFlow integrates the <strong>Google Mobile Ads SDK (AdMob)</strong> and the <strong>Google User Messaging Platform (UMP)</strong> to display banner and interstitial advertisements that keep the app free.
+      </p>
+      <ul>
+        <li><strong>Data Collected by Google Mobile Ads:</strong> The AdMob SDK may automatically collect and process your device's <strong>Advertising ID (`com.google.android.gms.permission.AD_ID`)</strong>, approximate IP-based location, app interaction events (such as ad impressions and clicks), and diagnostic/crash data for advertising, analytics, and fraud prevention.</li>
+        <li><strong>Consent Management (EEA/UK/Switzerland):</strong> Before initializing the Google Mobile Ads SDK (`DELAY_APP_MEASUREMENT_INIT=true`), ClipFlow uses Google's User Messaging Platform (UMP) to request and respect your consent choices in applicable regions.</li>
+        <li><strong>Resetting or Opting Out of Advertising ID:</strong> You can reset or delete your Android Advertising ID at any time in your device's system settings under <em>Settings &rarr; Google &rarr; All services &rarr; Ads</em>.</li>
+        <li>Learn more about how Google handles data in partner apps at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">https://policies.google.com/technologies/partner-sites</a>.</li>
+      </ul>
+
+      <h2>4. Permissions Used</h2>
+      <ul>
+        <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Required to fetch media streams from the URLs you provide and to load ads.</li>
+        <li><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_DATA_SYNC</code>: Used to keep user-initiated media downloads and stream remuxing running reliably with an active progress notification when you switch apps.</li>
+        <li><code>POST_NOTIFICATIONS</code>: Optional permission on Android 13+ to display download progress and completion notifications.</li>
+        <li><code>com.google.android.gms.permission.AD_ID</code>: Used by the Google Mobile Ads SDK for advertising and fraud prevention.</li>
+      </ul>
+
+      <h2>5. Children's Privacy &amp; Security</h2>
+      <p>
+        ClipFlow is not directed to children under the age of 13. All network communications conducted by the app and integrated SDKs use encrypted HTTPS/TLS connections.
+      </p>
+
+      <h2>6. Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy, please contact the developer via the support email listed on the Google Play Store page for ClipFlow.
+      </p>
+    </section>
+
+    <section id="pt-br">
+      <h2>1. Visão Geral (Português — Brasil)</h2>
+      <p>
+        O <strong>ClipFlow</strong> é um gerenciador de downloads de vídeos públicos para redes sociais compatíveis (como TikTok, Instagram e X/Twitter) que opera localmente no seu dispositivo. O ClipFlow não exige cadastro, criação de conta nem armazenamento em nuvem.
+      </p>
+
+      <h2>2. Processamento e Armazenamento Local no Dispositivo</h2>
+      <ul>
+        <li><strong>Links e Downloads de Mídia:</strong> Os links colados ou compartilhados com o ClipFlow são processados diretamente no seu aparelho Android para listar os formatos disponíveis e salvar o arquivo escolhido na galeria/armazenamento do seu dispositivo (<code>MediaStore</code>). O ClipFlow não possui servidores próprios para coletar os links ou vídeos que você baixa.</li>
+        <li><strong>Histórico Local:</strong> O histórico de downloads fica salvo apenas no banco de dados interno do seu celular para que você possa abrir, compartilhar ou tentar novamente seus downloads. Você pode apagar esses dados a qualquer momento limpando os dados do aplicativo nas Configurações do Android.</li>
+        <li><strong>Sessões Temporárias de Rede:</strong> Metadados temporários de requisição HTTP necessários para concluir uma transferência ativa são guardados em diretório privado sem backup e expiram automaticamente em até 6 horas.</li>
+      </ul>
+
+      <h2>3. Publicidade e Google AdMob SDK</h2>
+      <p>
+        A versão da Google Play do ClipFlow utiliza o <strong>Google Mobile Ads SDK (AdMob)</strong> e a plataforma de consentimento <strong>Google User Messaging Platform (UMP)</strong> para exibir anúncios que mantêm o aplicativo gratuito.
+      </p>
+      <ul>
+        <li><strong>Dados Coletados pelo Google Mobile Ads:</strong> O SDK do AdMob pode coletar e processar automaticamente o <strong>ID de Publicidade do dispositivo (`AD_ID`)</strong>, localização aproximada (baseada em IP), interações com anúncios (impressões e cliques) e diagnósticos de desempenho/falhas para fins de exibição de anúncios, análise e prevenção contra fraudes.</li>
+        <li><strong>Consentimento (UMP):</strong> O carregamento do SDK de anúncios aguarda a verificação de consentimento aplicável (`DELAY_APP_MEASUREMENT_INIT=true`).</li>
+        <li><strong>Como Redefinir ou Excluir o ID de Publicidade:</strong> Você pode redefinir ou excluir o seu ID de publicidade a qualquer momento no seu Android em <em>Configurações &rarr; Google &rarr; Todos os serviços &rarr; Anúncios</em>.</li>
+        <li>Saiba mais sobre como o Google utiliza dados em apps parceiros em <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">https://policies.google.com/technologies/partner-sites</a>.</li>
+      </ul>
+
+      <h2>4. Permissões Utilizadas</h2>
+      <ul>
+        <li><code>INTERNET</code> e <code>ACCESS_NETWORK_STATE</code>: Necessárias para baixar as mídias solicitadas pelo usuário e carregar anúncios.</li>
+        <li><code>FOREGROUND_SERVICE</code> e <code>FOREGROUND_SERVICE_DATA_SYNC</code>: Usadas para manter o download iniciado pelo usuário ativo em segundo plano com uma notificação visível de progresso.</li>
+        <li><code>POST_NOTIFICATIONS</code>: Permissão opcional no Android 13+ para exibir notificações de progresso e conclusão do download.</li>
+        <li><code>com.google.android.gms.permission.AD_ID</code>: Utilizada pelo SDK do Google Mobile Ads para publicidade e prevenção a fraudes.</li>
+      </ul>
+
+      <h2>5. Privacidade Infantil e Segurança</h2>
+      <p>
+        O ClipFlow não é direcionado a menores de 13 anos. Todo o tráfego de rede utiliza conexões criptografadas via HTTPS/TLS.
+      </p>
+
+      <h2>6. Contato</h2>
+      <p>
+        Em caso de dúvidas sobre esta Política de Privacidade, entre em contato pelo e-mail de suporte informado na página oficial do aplicativo na Google Play Store.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
